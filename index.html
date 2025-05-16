@@ -76,10 +76,11 @@
   <!-- Start Hero -->
   <section class="hero-section" id="hero">
     <div class="ak-hero ak-style1">
+      <!-- Banner Image - Only this will be visible on mobile -->
       <div class="ak-hero-featured">
         <img src="assets/img/hero/maac-degree.jpg" class="ak-hero-bg" alt="..." />
       </div>
-      <div class="container-md">
+      <div class="container-md desktop-only-content">
         <div class="row align-items-center">
           <!-- Left Column - Hero Content -->
           <div class="col-lg-8 left-section-hero">
@@ -119,7 +120,7 @@
             </div>
           </div>
           <!-- Right Column - Lead Form -->
-          <div class="col-lg-6 contact-wrapper-heading">
+          <div class="col-lg-6 mobile-contact-form">
             <div class="hero-slider-info contact-form contact-form-header bg-white p-4 rounded shadow">
               <p class="mini-title" style="color: #030917; text-align: justify">
                 Best Institute to learn 3D Animation, VFX, Gaming & Graphic Design in Bengaluru
@@ -178,6 +179,61 @@
   </section>
   <!-- End Hero -->
 
+  <!-- Mobile-only Contact Form Section with custom classes -->
+  <section class="maac-mobile-section">
+    <div class="maac-container">
+      <div class="maac-form-wrapper">
+        <div class="maac-form-content">
+          <h3 class="maac-form-title">Best Institute to learn 3D Animation, VFX, Gaming & Graphic Design in Bengaluru
+          </h3>
+          <form id="mobileLeadFormBulls" class="maac-lead-form"
+            action="https://script.google.com/macros/s/AKfycbwfbiHgk_fA58Fw7ZqEpfPtPsbyDdqxXMogxeHQr23Nsbjt6V3BrQ2E-VpmDYCbhUOzwQ/exec">
+            <div class="maac-form-group">
+              <label for="mobile-fullname" class="maac-form-label">Your Name</label>
+              <input type="text" name="fullname" id="mobile-fullname" class="maac-form-input"
+                placeholder="Write your name here..." />
+            </div>
+
+            <div class="maac-form-row">
+              <div class="maac-form-group">
+                <label for="mobile-yourPhone" class="maac-form-label">Your Phone</label>
+                <input type="tel" name="phone" id="mobile-yourPhone" class="maac-form-input"
+                  placeholder="Write your phone number here..." />
+              </div>
+              <div class="maac-form-group">
+                <label for="mobile-emailInput" class="maac-form-label">Your Email*</label>
+                <input type="email" name="email" id="mobile-emailInput" class="maac-form-input"
+                  placeholder="Write your email here" required />
+              </div>
+            </div>
+
+            <div class="maac-form-group">
+              <label for="mobile-prefered-location-input" class="maac-form-label">Preferred Location</label>
+              <select name="experience" id="mobile-prefered-location-input" class="maac-form-select">
+                <option value="" disabled selected hidden>Select your preferred Location...</option>
+                <option value="Jayanagar">Jayanagar</option>
+                <option value="HSL Layout">HSL Layout</option>
+              </select>
+            </div>
+
+            <div class="maac-form-spacing"></div>
+
+            <button type="submit" class="maac-submit-button">
+              <span class="maac-button-text">Request a Call</span>
+              <span class="maac-button-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                  <g clip-path="url(#clip0_201_978343789)">
+                    <path d="M1.42236 6.99728H13.089M13.089 6.99728L7.48903 1.39728M13.089 6.99728L7.48903 12.5973"
+                      stroke="#030917" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Software Covered Section -->
   <div class="ak-height-125 ak-height-lg-80"></div>
@@ -186,91 +242,79 @@
       style="text-align:center; margin-bottom: 40px;">
       <h2 class="ak-section-title animation-title">Softwares Covered</h2>
     </div>
-    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4 justify-content-center">
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-3 g-4 justify-content-center">
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/adobe-photoshop.png" alt="Adobe Photoshop" class="mb-3" style="height:48px;">
-          <h6>Adobe Photoshop</h6>
-          <!-- <p class="text-muted mb-0">Gut Health</p> -->
+          <h6 class="software-card-title">Adobe Photoshop</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/adobe-premiere.png" alt="Adobe Premiere" class="mb-3" style="height:48px;">
-          <h6>Adobe Premiere</h6>
-          <!-- <p class="text-muted mb-0">Mind Balance</p> -->
+          <h6 class="software-card-title">Adobe Premiere</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/adobe-after-effects.png" alt="Adobe After Effects" class="mb-3"
             style="height:48px;">
-          <h6>Adobe After Effects</h6>
-          <!-- <p class="text-muted mb-0">Breathe Easy</p> -->
+          <h6 class="software-card-title">Adobe After Effects</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/autodesk-3ds-max.png" alt="Autodesk 3ds Max" class="mb-3" style="height:48px;">
-          <h6>Autodesk 3ds Max</h6>
-          <!-- <p class="text-muted mb-0">Men's Wellness</p> -->
+          <h6 class="software-card-title">Autodesk 3ds Max</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/unreal-engine.png" alt="Unreal Engine" class="mb-3" style="height:48px;">
-          <h6>Unreal Engine</h6>
-          <!-- <p class="text-muted mb-0">Her Health</p> -->
+          <h6 class="software-card-title">Unreal Engine</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/zbrush.png" alt="Zbrush" class="mb-3" style="height:48px;">
-          <h6>Zbrush</h6>
-          <!-- <p class="text-muted mb-0">Derm &amp; Follicle</p> -->
+          <h6 class="software-card-title">Zbrush</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/adobe-audition.png" alt="Adobe Audition" class="mb-3" style="height:48px;">
-          <h6>Adobe Audition</h6>
-          <!-- <p class="text-muted mb-0">Sugar Control</p> -->
+          <h6 class="software-card-title">Adobe Audition</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/autodesk-maya.png" alt="Autodesk Maya" class="mb-3" style="height:48px;">
-          <h6>Autodesk Maya</h6>
-          <!-- <p class="text-muted mb-0">Headache Relief</p> -->
+          <h6 class="software-card-title">Autodesk Maya</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/autodesk-mudbox.png" alt="Autodesk Mudbox" class="mb-3" style="height:48px;">
-          <h6>Autodesk Mudbox</h6>
-          <!-- <p class="text-muted mb-0">Stone Passage</p> -->
+          <h6 class="software-card-title">Autodesk Mudbox</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/motion-builder.png" alt="MotionBuilder" class="mb-3" style="height:48px;">
-          <h6>MotionBuilder</h6>
-          <!-- <p class="text-muted mb-0">Child Health</p> -->
+          <h6 class="software-card-title">MotionBuilder</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/blackmagic-fusion.png" alt="Blackmagic Fusion" class="mb-3"
             style="height:48px;">
-          <h6>Blackmagic Fusion</h6>
-          <!-- <p class="text-muted mb-0">Hormone Balance</p> -->
+          <h6 class="software-card-title">Blackmagic Fusion</h6>
         </div>
       </div>
       <div class="col">
         <div class="disease-card text-center p-4 bg-white rounded shadow-sm h-100">
           <img src="assets/img/softwares/substance-3d.png" alt="Substance 3d" class="mb-3" style="height:48px;">
-          <h6>Substance 3d</h6>
-          <!-- <p class="text-muted mb-0">BP Control</p> -->
+          <h6 class="software-card-title">Substance 3d</h6>
         </div>
       </div>
     </div>
