@@ -4090,8 +4090,10 @@ kbd {
   width: 100%;
   transition: all 0.2s;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%; /* Set top to 50% */
+  left: 50%; /* Set left to 50% */
+  /* transform: translateX(-50); */
+  transform: translate(-50%, -50%); /* Use translate(-50%, -50%) to center */
 }
 .about-us-content .image-content .about-img-2 {
   position: absolute;
@@ -4134,7 +4136,7 @@ kbd {
 }
 @media screen and (max-width: 991px) {
   .about-us-content .image-content {
-    height: auto;
+    height: 100%;
   }
   .about-us-content-bg .aboutus {
     position: relative;
@@ -4147,13 +4149,20 @@ kbd {
   }
   .about-us-content .image-content {
     max-height: 400px;
-    height: 100%;
+    height: auto; /* Allow height to adjust */
     max-width: 100%;
     overflow: hidden;
+    display: block; /* Ensure image container is a block element */
   }
   .about-us-content .image-content .about-img-1 {
     max-width: 100%;
     width: 100%;
+    position: static; /* Override absolute positioning on mobile */
+    top: auto; /* Reset top */
+    left: auto; /* Reset left */
+    transform: none; /* Reset transform */
+    height: auto; /* Allow height to adjust based on width */
+    object-fit: cover; /* Ensure the image covers the area */
   }
 }
 /*--------------------------------------------------------------
@@ -5774,6 +5783,7 @@ kbd {
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(3, 9, 23, 0.1);
+  width: 300px;
 }
 .contact-form .form-inputs .type_1 input:focus,
 .contact-form .form-inputs .type_1 select:focus {
@@ -6186,7 +6196,7 @@ kbd {
   .ak-error-content .error-info .error-title {
     font-size: 90px;
   }
-} /*# sourceMappingURL=style.css.map */
+}
 
 .anim-pulse {
   animation: pulseAnimation 1.5s infinite;
@@ -6484,12 +6494,21 @@ kbd {
   margin-top: 60px;
   display: none; /* Hidden by default, will be shown only on mobile */
   background-color: var(--body-bg-color);
+  padding-top: 30px; /* Add padding to the top */
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+.maac-mobile-section .mobile-banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 30px; /* Space between banner and form */
 }
 
 .maac-container {
   width: 100%;
   height: 100%;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6506,6 +6525,7 @@ kbd {
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 0 15px
 }
 
 .maac-form-title {
@@ -6811,5 +6831,65 @@ New "Why Choose MAAC" Section Styles
   }
   .maac-feature-text .maac-feature-title {
     font-size: 16px;
+  }
+}
+
+/*--------------------------------------------------------------
+New "Students Placed At" Section Styles
+----------------------------------------------------------------*/
+.students-placed-section {
+  /* Add padding similar to other sections */
+  padding: 50px 15px;
+}
+
+.students-placed-section .row {
+  /* Ensure centered alignment */
+  justify-content: center;
+}
+
+.students-placed-section .col-auto {
+  /* Add some spacing between logos */
+  padding: 0 15px; /* Adjust spacing as needed */
+  display: flex;
+  align-items: center;
+}
+
+.students-placed-section img {
+  /* Ensure images scale down responsibly */
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7; /* Slightly dim logos */
+  transition: opacity 0.3s ease;
+}
+
+.students-placed-section img:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+@media (max-width: 767px) {
+  .students-placed-section .col-auto {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+  .students-placed-section img {
+    max-height: 40px; /* Further reduce image size on very small screens */
+  }
+}
+
+/* Hide the desktop content on mobile */
+@media (max-width: 991px) {
+  .desktop-only-content {
+    display: none !important;
+  }
+
+  /* Hide the entire hero section on mobile */
+  .hero-section {
+    display: none !important;
+  }
+}
+
+/* Hide the mobile-only form section on desktop */
+@media (min-width: 992px) {
+  .maac-mobile-section {
+    display: none;
   }
 }
