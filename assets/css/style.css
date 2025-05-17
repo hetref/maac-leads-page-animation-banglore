@@ -42,8 +42,8 @@
 ----------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 :root {
-  --body-font-family: "DM Sans", sans-serif;
-  --heading-font-family: "Lato", sans-serif;
+  --body-font-family: "Roboto", sans-serif;
+  --heading-font-family: "Roboto", sans-serif;
   --body-color: #485b60;
   --body-bg-color: #fdfbf7;
   --body-bg-color-two: #f4ffff;
@@ -6731,5 +6731,85 @@ kbd {
   .disease-card img {
     height: 40px !important;
     margin-bottom: 8px !important;
+  }
+}
+
+/*--------------------------------------------------------------
+New "Why Choose MAAC" Section Styles
+----------------------------------------------------------------*/
+
+.maac-feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.maac-feature-icon {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px; /* Space between icon and text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9d67c; /* Example background color, adjust as needed */
+  /* Add a subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.maac-feature-icon img {
+  width: 98%; /* Adjust image size within the circle */
+  height: 98%; /* Adjust image size within the circle */
+  object-fit: contain; /* Ensure the image fits within the circle without distortion */
+}
+
+.maac-feature-text .maac-feature-title {
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: 500;
+  color: var(--heading-color);
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.maac-feature-text .maac-feature-desp {
+  font-size: 16px; /* Adjust font size as needed */
+  color: var(--body-color);
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for feature items */
+@media (max-width: 767px) {
+  .maac-feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  .maac-feature-icon img {
+    width: 90%;
+    height: 90%;
+  }
+  .maac-feature-text .maac-feature-title {
+    font-size: 18px;
+  }
+  .maac-feature-text .maac-feature-desp {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .why-choose-maac-section {
+    padding: 30px 15px;
+  }
+  .maac-feature-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .maac-feature-icon img {
+    width: 90%;
+    height: 90%;
+  }
+  .maac-feature-text .maac-feature-title {
+    font-size: 16px;
   }
 }
