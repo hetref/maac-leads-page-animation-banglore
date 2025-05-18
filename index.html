@@ -198,33 +198,37 @@
           <form id="mobileLeadFormBulls" class="maac-lead-form"
             action="https://script.google.com/macros/s/AKfycbwfbiHgk_fA58Fw7ZqEpfPtPsbyDdqxXMogxeHQr23Nsbjt6V3BrQ2E-VpmDYCbhUOzwQ/exec">
             <div class="maac-form-group">
-              <label for="mobile-fullname" class="maac-form-label">Your Name</label>
+              <label for="mobile-fullname" class="maac-form-label">Name</label>
               <input type="text" name="fullname" id="mobile-fullname" class="maac-form-input"
-                placeholder="Write your name here..." />
-            </div>
-
-            <div class="maac-form-row">
-              <div class="maac-form-group">
-                <label for="mobile-yourPhone" class="maac-form-label">Your Phone</label>
-                <input type="tel" name="phone" id="mobile-yourPhone" class="maac-form-input"
-                  placeholder="Write your phone number here..." />
-              </div>
-              <div class="maac-form-group">
-                <label for="mobile-emailInput" class="maac-form-label">Your Email*</label>
-                <input type="email" name="email" id="mobile-emailInput" class="maac-form-input"
-                  placeholder="Write your email here" required />
-              </div>
+                placeholder="Your name here..." />
             </div>
 
             <div class="maac-form-group">
-              <label for="mobile-prefered-location-input" class="maac-form-label">Preferred Location</label>
+              <label for="mobile-yourPhone" class="maac-form-label">Phone</label>
+              <input type="tel" name="phone" id="mobile-yourPhone" class="maac-form-input"
+                placeholder="Your phone number here..." />
+            </div>
+
+            <div class="maac-form-group">
+              <label for="mobile-prefered-location-input" class="maac-form-label">Location</label>
               <select name="experience" id="mobile-prefered-location-input" class="maac-form-select">
-                <option value="" disabled selected hidden>Select your preferred Location...</option>
+                <option value="" disabled selected hidden>Select your Location...</option>
                 <option value="Jayanagar">Jayanagar</option>
                 <option value="HSL Layout">HSL Layout</option>
               </select>
             </div>
 
+            <div class="maac-form-group">
+              <label for="mobile-courses-input" class="maac-form-label">Courses</label>
+              <select name="experience" id="mobile-courses-input" class="maac-form-select">
+                <option value="" disabled selected hidden class="select-placeholder">
+                  Select your course...
+                </option>
+                <option value="3D animation">3D animation</option>
+                <option value="VFX">VFX</option>
+                <option value="Game Design">Game Design</option>
+              </select>
+            </div>
             <div class="maac-form-spacing"></div>
 
             <button type="submit" class="maac-submit-button">
@@ -915,12 +919,12 @@
   <!-- Strat Contact -->
   <!-- <div class="ak-height-125 ak-height-lg-80"></div> -->
   <div id="contact">
-    <div class="container-fluid px-md-0">
+    <div class="container-fluid px-0">
       <div class="contact-form-content">
         <div class="contact-form-img image-hov-one">
           <img src="assets/img/contact/contact.jpg" alt="..." />
         </div>
-        <div class="contact-form" id="contact-form-redirect">
+        <div class="contact-form px-4 px-md-0" id="contact-form-redirect">
           <div>
             <h5 class="contact-title">
               <b>Ready to bring your ideas to life?</b> Don't miss the chance to work with Bangalore's leading animation
@@ -1000,7 +1004,7 @@
         <div class="footer-content">
           <div class="company-info">
             <a class="ak-site_branding" href="index.html">
-              <img src="assets/img/LogoBlack.png" alt="..." style="border-radius: 10px;" />
+              <img src="assets/img/LogoBlack.png" alt="..." style="border-radius: 10px; width: 80%" />
             </a>
             <p class="text">
               We are a team of passionate creative professionals dedicated to bringing stories to life through

@@ -5995,6 +5995,10 @@ kbd {
   .contact-form .form-inputs {
     flex-direction: column;
   }
+  .contact-form .form-inputs .type_1 input,
+  .contact-form .form-inputs .type_1 select {
+    width: 100%;
+  }
 }
 /*--------------------------------------------------------------
 27. Projects Card
