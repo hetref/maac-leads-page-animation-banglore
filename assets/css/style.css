@@ -5697,6 +5697,10 @@ kbd {
 /*--------------------------------------------------------------
 26. Contact Form
 ----------------------------------------------------------------*/
+#contact {
+  background: var(--body-color)
+}
+
 .comments-box-content {
   background-color: #030917;
   padding: 57px 70px;
@@ -5705,7 +5709,7 @@ kbd {
 .contact-form-content {
   display: flex;
   gap: 100px;
-  background-color: #030917;
+  /* background-color: #030917; */
 }
 .contact-form-content .contact-form-img {
   max-width: 860px;
@@ -5721,13 +5725,16 @@ kbd {
   align-self: center;
   padding: 15px;
 }
+.contact-form-content .contact-form .contact-title {
+  color: var(--black-color);
+}
 .contact-wrapper-heading {
   justify-content: center !important;
   align-items: center !important;
 }
 .contact-form-header {
   right: 4% !important;
-  background: rgba(255, 255, 255, 0.9) !important;
+  /* background: rgba(255, 255, 255, 0.9) !important; */
   height: fit-content !important;
   /* border-radius: 0px !important; */
   top: 50% !important;
@@ -6921,4 +6928,17 @@ New "Students Placed At" Section Styles
   .maac-mobile-section {
     display: none;
   }
+}
+
+/*--------------------------------------------------------------
+New "FAQ" Section Styles
+----------------------------------------------------------------*/
+
+.faq {
+  background: var(--secondary-color)
+}
+
+.faq-subtitle {
+  color: var(--body-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
