@@ -4258,14 +4258,18 @@ kbd {
   }
 }
 /*--------------------------------------------------------------
-18. Feature Content
+18. Benefits Content
 ----------------------------------------------------------------*/
+#benefits {
+  background: var(--primary-color);
+}
+
 .feature-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  background-color: var(--body-bg-color); /* Added dark background */
+  /* background-color: var(--body-bg-color); Added dark background */
   padding: 80px 0;
 }
 
@@ -4276,17 +4280,18 @@ kbd {
   margin-bottom: 28px;
   width: 50px;
   height: 50px;
+  color: var(--black-color)
 }
 .feature-card .feature-body .feature-title {
   margin-bottom: 15px;
   font-size: 24px;
   line-height: 135%;
-  color: var(--heading-color); /* Ensure title is light */
+  color: var(--black-color); /* Ensure title is light */
 }
 .feature-card .feature-desp {
   margin-bottom: 50px;
   font-size: 16px;
-  color: var(--body-color); /* Ensure description is light */
+  color: var(--black-color); /* Ensure description is light */
 }
 .feature-card.style-2 {
   padding: 35px;
@@ -4360,7 +4365,7 @@ kbd {
   display: inline-block;
   height: 310px;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .ak-feature-hr.ak-h-100 {
   height: 100px;
