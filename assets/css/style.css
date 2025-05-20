@@ -2369,7 +2369,6 @@ kbd {
   max-width: 695px;
   width: 100%;
 }
-
 .ak-footer.style-1 .footer-content {
   position: relative;
   display: flex;
@@ -2606,6 +2605,13 @@ kbd {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 425px) {
+.footer_logo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+}
 /*--------------------------------------------------------------
   10. Pagination
 ----------------------------------------------------------------*/
@@ -2639,7 +2645,7 @@ kbd {
 .ak-section-heading.ak-style-1 .ak-section-title {
   font-size: 50px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold ;
   line-height: 125%;
 }
 .ak-section-heading.ak-style-1 .ak-section-subtitle {
@@ -4065,7 +4071,6 @@ kbd {
   bottom: 0;
   background-repeat: no-repeat;
 }
-
 .about-us-content {
   position: relative;
   display: flex;
@@ -4076,6 +4081,11 @@ kbd {
 @media (min-width: 991px) {
   .about-us-content {
     align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-us-content .info-content {
+    padding: 0 10px !important;
   }
 }
 .about-us-content .image-content {
@@ -5963,7 +5973,7 @@ kbd {
   }
   .contact-form-content .contact-form-img {
     max-width: 100%;
-    flex-basis: 450px;
+    /* flex-basis: 450px; */
     overflow: hidden;
   }
   .contact-form-content .contact-form {
@@ -7018,4 +7028,13 @@ New "FAQ" Section Styles
   font-size: 20px;
   cursor: pointer;
   color: #aaa;
+}
+
+@media screen and (max-width: 425px) {
+  .no_padding_mob {
+    padding: 0 !important
+  }
+  .no_padding_mob img {
+    border-radius: 0px !important;
+  }
 }
