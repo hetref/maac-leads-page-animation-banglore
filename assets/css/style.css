@@ -2351,6 +2351,9 @@ kbd {
     width: 20px;
     height: 20px;
   }
+  .ak-site_header.ak-style1 .ak-main_header_in {
+    height: 60px;
+  }
 }
 /*--------------------------------------------------------------
   9. Footer
@@ -2384,7 +2387,8 @@ kbd {
 }
 .ak-footer.style-1 .footer-content .company-info .text {
   color: #e7e7e7;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 .ak-footer.style-1 .footer-content .company-info .social-icon {
   display: flex;
@@ -2606,11 +2610,14 @@ kbd {
   }
 }
 @media screen and (max-width: 425px) {
-.footer_logo {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
+  .footer_logo {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content {
+    gap: 40px !important;
+  }
 }
 /*--------------------------------------------------------------
   10. Pagination
@@ -2645,7 +2652,7 @@ kbd {
 .ak-section-heading.ak-style-1 .ak-section-title {
   font-size: 50px;
   font-style: normal;
-  font-weight: bold ;
+  font-weight: bold;
   line-height: 125%;
 }
 .ak-section-heading.ak-style-1 .ak-section-subtitle {
@@ -2665,7 +2672,7 @@ kbd {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 200%;
+  line-height: 160%;
 }
 .ak-section-heading.ak-style-1.color-2 .ak-section-title {
   color: #fff;
@@ -2692,7 +2699,7 @@ kbd {
 }
 @media screen and (max-width: 767px) {
   .ak-section-heading.ak-style-1 .ak-section-title {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 /*--------------------------------------------------------------
@@ -3066,7 +3073,7 @@ kbd {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-position: right center;  
+  object-position: right center;
   object-fit: cover;
   background-size: cover;
   background-position: 50%;
@@ -3811,11 +3818,11 @@ kbd {
     width: 100%;
   }
   .ak-about-hero-1 .about-hero-content .ak-section-title {
-    font-size: 42px;
+    font-size: 26px;
     line-height: 110%;
   }
   .common-page-hero .common-hero-content .common-hero-info .ak-section-title {
-    font-size: 42px;
+    font-size: 26px;
     line-height: 110%;
   }
 }
@@ -4084,6 +4091,9 @@ kbd {
   }
 }
 @media screen and (max-width: 425px) {
+  .about-us-content {
+    gap: 20px;
+  }
   .about-us-content .info-content {
     padding: 0 10px !important;
   }
@@ -4282,6 +4292,12 @@ kbd {
   /* background-color: var(--body-bg-color); Added dark background */
   padding: 80px 0;
 }
+@media screen and (max-width: 425px) {
+  .feature-content {
+    gap: 35px !important;
+    padding: 40px 0;
+  }
+}
 
 .feature-card {
   max-width: 317px;
@@ -4290,7 +4306,7 @@ kbd {
   margin-bottom: 28px;
   width: 50px;
   height: 50px;
-  color: var(--black-color)
+  color: var(--black-color);
 }
 .feature-card .feature-body .feature-title {
   margin-bottom: 15px;
@@ -4351,19 +4367,22 @@ kbd {
 .feature-card-two {
   display: inline-flex;
   flex-direction: column;
-  height: 208px;
+  /* height: 208px; */
   justify-content: center;
   align-items: center;
   border: 1px solid #333333;
+  padding: 30px;
 }
 .feature-card-two .feature-card-info {
   max-width: 307px;
+  display: flex;
+  gap: 10px;
 }
 .feature-card-two .feature-card-info .feature-title {
   /* margin-bottom: 30px; */
   font-size: 20px;
   line-height: 135%;
-  color: var(--black-color)
+  color: var(--black-color);
 }
 
 .feature-card-two .feature-card-info .learn-big {
@@ -4798,7 +4817,11 @@ kbd {
   bottom: 0;
   left: 0;
   opacity: 0.6;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 63.57%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 63.57%
+  );
   transition: all 0.3s;
 }
 .team-card.style-two .team-thamnel .team-card-btn {
@@ -5708,7 +5731,7 @@ kbd {
 26. Contact Form
 ----------------------------------------------------------------*/
 #contact {
-  background: var(--body-color)
+  background: var(--body-color);
 }
 
 .comments-box-content {
@@ -5969,7 +5992,7 @@ kbd {
   .contact-form-content {
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
   .contact-form-content .contact-form-img {
     max-width: 100%;
@@ -6309,7 +6332,7 @@ kbd {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-position: right center;  
+  object-position: right center;
   object-fit: cover;
   background-size: cover;
   background-position: 50%;
@@ -6339,7 +6362,11 @@ kbd {
 }
 
 .hero-section .ak-hero.ak-style1 .hero-slider-info .hero-title .hero-main-title,
-.hero-section .ak-hero.ak-style1 .hero-slider-info .hero-title .hero-main-title-1.style-2,
+.hero-section
+  .ak-hero.ak-style1
+  .hero-slider-info
+  .hero-title
+  .hero-main-title-1.style-2,
 .hero-section .ak-hero.ak-style1 .hero-slider-info .hero-title .mini-title,
 .hero-section .ak-hero.ak-style1 .hero-slider-info .hero-title .main-desp,
 .hero-section .ak-hero.ak-style1 .hero-slider-info .common-btn.style-2 {
@@ -6353,7 +6380,11 @@ kbd {
   text-transform: capitalize;
 }
 
-.hero-section .ak-hero.ak-style1 .hero-slider-info .hero-main-title .hero-main-title-1 {
+.hero-section
+  .ak-hero.ak-style1
+  .hero-slider-info
+  .hero-main-title
+  .hero-main-title-1 {
   font-size: 70px;
 }
 
@@ -6387,7 +6418,11 @@ kbd {
   .hero-section .ak-hero.ak-style1 .hero-slider-info .hero-main-title {
     font-size: 48px;
   }
-  .hero-section .ak-hero.ak-style1 .hero-slider-info .hero-main-title .hero-main-title-1 {
+  .hero-section
+    .ak-hero.ak-style1
+    .hero-slider-info
+    .hero-main-title
+    .hero-main-title-1 {
     font-size: 45px;
   }
   .hero-section .ak-hero.ak-style1 .hero-slider-info .main-desp {
@@ -6519,7 +6554,7 @@ kbd {
 /* Custom MAAC Mobile Form Styles */
 .maac-mobile-section {
   /* height: 100svh; */
-  margin-top: 60px;
+  margin-top: 40px;
   display: none; /* Hidden by default, will be shown only on mobile */
   background-color: var(--body-bg-color);
   padding-top: 30px; /* Add padding to the top */
@@ -6553,7 +6588,7 @@ kbd {
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin: 0 15px
+  margin: 0 15px;
 }
 
 .maac-form-title {
@@ -6675,7 +6710,7 @@ kbd {
   .maac-mobile-section {
     display: block;
   }
-  
+
   /* Hide the mobile-only-form-section if it still exists */
   .mobile-only-form-section {
     display: none;
@@ -6727,7 +6762,7 @@ kbd {
     margin-bottom: 0;
     padding-top: 0;
   }
-  
+
   .hero-section .ak-hero {
     height: 100%;
   }
@@ -6755,13 +6790,13 @@ kbd {
 
 /* Software Cards Styling */
 #software-covered {
-  background: var(--secondary-color)
+  background: var(--secondary-color);
 }
 .software-card-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0;
-  color: var(--black-color)
+  color: var(--black-color);
 }
 
 @media (max-width: 767px) {
@@ -6769,17 +6804,17 @@ kbd {
   .software-card-title {
     font-size: 0.85rem;
   }
-  
+
   /* Reduce padding in cards on mobile for better fit */
   .disease-card {
     padding: 12px 8px !important;
   }
-  
+
   /* Reduce gap between cards */
   #software-covered .row {
     gap: 10px;
   }
-  
+
   /* Smaller images on mobile */
   .disease-card img {
     height: 40px !important;
@@ -6794,6 +6829,29 @@ New "Why Choose MAAC" Section Styles
 .why-choose-maac-section {
   background: var(--primary-color);
   padding-bottom: 50px;
+}
+
+.why-choose-maac-section .ak-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.why-choose-maac-heading-img {
+  background: #fff;
+  width: fit-content;
+  height: 60px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 425px) {
+  .why-choose-maac-section {
+    gap: 8px;
+  }
+  .why-choose-maac-heading-img {
+    height: 40px;
+  }
 }
 
 .maac-feature-item {
@@ -6888,7 +6946,9 @@ New "Students Placed At" Section Styles
 }
 
 .students-placed-section .ak-section-subtitle {
-    color: var(--black-color); /* Ensure subtitle text is dark on white background */
+  color: var(
+    --black-color
+  ); /* Ensure subtitle text is dark on white background */
 }
 
 .students-placed-section .row {
@@ -6950,7 +7010,7 @@ New "FAQ" Section Styles
 ----------------------------------------------------------------*/
 
 .faq {
-  background: var(--secondary-color)
+  background: var(--secondary-color);
 }
 
 .faq-subtitle {
@@ -7018,7 +7078,7 @@ New "FAQ" Section Styles
 
 .modal-option-link:hover {
   background-color: #f0f0f0;
-  color: var(--black-color)
+  color: var(--black-color);
 }
 
 .modal-close {
@@ -7032,7 +7092,7 @@ New "FAQ" Section Styles
 
 @media screen and (max-width: 425px) {
   .no_padding_mob {
-    padding: 0 !important
+    padding: 0 !important;
   }
   .no_padding_mob img {
     border-radius: 0px !important;
@@ -7088,27 +7148,27 @@ New "FAQ" Section Styles
 
 @keyframes thankYouAnimation {
   0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
 
   50% {
-      opacity: 1;
-      transform: translateY(10px);
+    opacity: 1;
+    transform: translateY(10px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @media (max-width: 480px) {
   .thank_you h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .thank_you p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
