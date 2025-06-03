@@ -706,7 +706,7 @@
               guidance and real-world exposure.
             </p>
             <p class="ak-section-desp">
-              At Animation Bangalore, we offer both. With industry-experienced
+              At MAAC Bangalore, we offer both. With industry-experienced
               mentors, studio-grade training, and hands-on projects, we help you
               build a strong foundation and turn your passion into a profession.
               Whether you're a student or a creative professional, our
@@ -1387,7 +1387,7 @@
       <div class="container-fluid px-0">
         <div class="contact-form-content">
           <div class="contact-form-img image-hov-one">
-            <img src="assets/img/contact/contact.jpg" alt="..." />
+            <img src="assets/img/contact/contact.webp" alt="..." />
           </div>
           <div class="contact-form px-4 px-md-0" id="contact-form-redirect">
             <div>
@@ -1548,7 +1548,7 @@
                   <h5 class="short-title">Get In Touch</h5>
                   <ul class="linek-all">
                     <li>
-                      <a href="https://www.google.com/maps" class="mb-3"
+                      <a href="https://maps.app.goo.gl/9AXz3FZxXSDtpZzK7" class="mb-3"
                         ><span style="font-weight: bold; font-size: 110%"
                           >MAAC Jayanagar</span
                         >
@@ -1570,7 +1570,7 @@
                       >
                     </li>
                     <li>
-                      <a href="https://www.google.com/maps" class="mb-3"
+                      <a href="https://maps.app.goo.gl/t1aAp7TNb1eERFNd7" class="mb-3"
                         ><span style="font-weight: bold; font-size: 110%"
                           >MAAC H.S.R Layout</span
                         >
@@ -1749,6 +1749,8 @@
           formData.forEach((value, key) => {
             formObject[key] = value;
           });
+          formObject.source = "3D Animation Landing Page"
+          formObject.timestamp = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
 
           // First submit to Google Sheets
           $.ajax({
@@ -1758,7 +1760,7 @@
             success: function (response) {
               // After successful Google Sheets submission, send to webhook
               $.ajax({
-                url: "https://n8n.aryanshinde.in/webhook/3d-animation-leads-page",
+                url: "https://n8n.aryanshinde.in/webhook/maac-landing-page",
                 type: "POST",
                 contentType: "application/json",
                 data: JSON.stringify({
@@ -1766,6 +1768,8 @@
                   phone: formObject.phone,
                   location: formObject.location,
                   course: formObject.course,
+                  source: formObject.source,
+                  timestamp: formObject.timestamp
                 }),
                 success: function (webhookResponse) {
                   // Clear all input fields without reloading

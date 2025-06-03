@@ -2381,6 +2381,11 @@ kbd {
 .ak-footer.style-1 .footer-content .company-info {
   max-width: 336px;
 }
+@media screen and (max-width: 425px) {
+  .ak-footer.style-1 .footer-content .company-info {
+    max-width: 425px;
+  }
+}
 .ak-footer.style-1 .footer-content .company-info .ak-site_branding {
   display: inline-block;
   margin-bottom: 15px;
@@ -6831,6 +6836,19 @@ New "Why Choose MAAC" Section Styles
   padding-bottom: 50px;
 }
 
+.why-choose-maac-section .ak-section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-maac-section .ak-section-heading h2 {
+  background: #fff;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
 .why-choose-maac-section .ak-section-title {
   display: flex;
   justify-content: center;
@@ -6839,7 +6857,7 @@ New "Why Choose MAAC" Section Styles
 }
 
 .why-choose-maac-heading-img {
-  background: #fff;
+  /* background: #fff; */
   width: fit-content;
   height: 60px;
   border-radius: 10px;
@@ -6850,7 +6868,7 @@ New "Why Choose MAAC" Section Styles
     gap: 8px;
   }
   .why-choose-maac-heading-img {
-    height: 40px;
+    height: 34px;
   }
 }
 
@@ -6912,7 +6930,7 @@ New "Why Choose MAAC" Section Styles
     height: 90%;
   }
   .maac-feature-text .maac-feature-title {
-    font-size: 18px;
+    font-size: 22px;
   }
   .maac-feature-text .maac-feature-desp {
     font-size: 14px;
@@ -6932,7 +6950,7 @@ New "Why Choose MAAC" Section Styles
     height: 90%;
   }
   .maac-feature-text .maac-feature-title {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
